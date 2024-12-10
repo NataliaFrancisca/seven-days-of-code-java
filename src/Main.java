@@ -15,7 +15,6 @@ public class Main {
                 .header("accept", "application/json")
                 .header("Authorization", "Bearer ".concat(API_KEY))
                 .GET()
-//                .method("GET", HttpRequest.BodyPublishers.noBody())
                 .build();
 
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
