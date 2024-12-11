@@ -2,6 +2,8 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.google.gson.reflect.TypeToken;
+import movie.Movie;
 
 import java.io.IOException;
 import java.net.URI;
@@ -45,8 +47,9 @@ public class Main {
             imgPath.add(movieImage);
         }
 
-        System.out.println("Filmes: " + titles);
-        System.out.println("Imagens: " + imgPath);
+        // CRIANDO UMA LISTA QUE RECEBE OS FILMES USANDO A CLASSE MOVIE
+        List<Movie> movieList = gson.fromJson(movies.toString(), new TypeToken<List<Movie>>() {}.getType());
+        movieList.forEach(movie -> System.out.println(movie.getTitle()));
     }
 
     public static String getAttribute(JsonElement movie, String attribute){
