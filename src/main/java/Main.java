@@ -3,9 +3,11 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
+import html.HTMLGenerator;
 import movie.Movie;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -49,7 +51,10 @@ public class Main {
 
         // CRIANDO UMA LISTA QUE RECEBE OS FILMES USANDO A CLASSE MOVIE
         List<Movie> movieList = gson.fromJson(movies.toString(), new TypeToken<List<Movie>>() {}.getType());
-        movieList.forEach(movie -> System.out.println(movie.getTitle()));
+
+        PrintWriter writer = new PrintWriter("content.html");
+        new HTMLGenerator(writer).generate(movieList);
+        writer.close();
     }
 
     public static String getAttribute(JsonElement movie, String attribute){
