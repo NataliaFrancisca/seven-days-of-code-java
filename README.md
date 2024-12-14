@@ -7,6 +7,6 @@
 - [X] dia 3: modelando um domínio
 - [X] dia 4: gerando o HTML
 - [X] dia 5: encapsulando o código
-- [ ] dia 6: criando abstrações
+- [X] dia 6: criando abstrações
 - [ ] dia 7: ordenando elementos
 
