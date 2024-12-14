@@ -2,30 +2,39 @@ package movie;
 
 public class Movie{
     private String title;
-    private String release_date;
-    private Double vote_average;
-    private String poster_path;
-
-    public Movie(String title, String release_date, Double vote_average, String poster_path) {
-        this.title = title;
-        this.release_date = release_date;
-        this.vote_average = vote_average;
-        this.poster_path = poster_path;
-    }
+    private String releaseDate;
+    private Double rating;
+    private String posterImage;
 
     public String getTitle() {
         return title;
     }
 
-    public String getRelease_date() {
-        return release_date;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public Double getVote_average() {
-        return vote_average;
+    public String getReleaseDate() {
+        return releaseDate;
     }
 
-    public String getPoster_path() {
-        return poster_path;
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
+    }
+
+    public Double getRating() {
+        return rating;
+    }
+
+    public void setRating(Double rating) {
+        this.rating = rating;
+    }
+
+    public String getPosterImage() {
+        return posterImage;
+    }
+
+    public void setPosterImage(String posterImage) {
+        this.posterImage = posterImage;
     }
 }
