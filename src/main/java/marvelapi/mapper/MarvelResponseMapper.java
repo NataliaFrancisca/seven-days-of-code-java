@@ -1,4 +1,4 @@
-package MarvelAPI.mapper;
+package marvelapi.mapper;
 
 import com.google.gson.JsonObject;
 import interfaces.Mapper;

@@ -1,4 +1,4 @@
-package MarvelAPI.utils;
+package marvelapi.utils;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;

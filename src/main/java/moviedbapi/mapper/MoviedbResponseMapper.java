@@ -1,4 +1,4 @@
-package MoviedbAPI.mapper;
+package moviedbapi.mapper;
 
 import com.google.gson.JsonObject;
 import interfaces.Mapper;
