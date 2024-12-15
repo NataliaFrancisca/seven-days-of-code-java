@@ -1,4 +1,4 @@
-package MoviedbAPI.http;
+package moviedbapi.http;
 
 import interfaces.ClientAPI;
 

@@ -1,6 +1,6 @@
-package MarvelAPI.json;
+package marvelapi.json;
 
-import MarvelAPI.mapper.MarvelResponseMapper;
+import marvelapi.mapper.MarvelResponseMapper;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;

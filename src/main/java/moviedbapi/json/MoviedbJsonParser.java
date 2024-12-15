@@ -1,6 +1,6 @@
-package MoviedbAPI.json;
+package moviedbapi.json;
 
-import MoviedbAPI.mapper.MoviedbResponseMapper;
+import moviedbapi.mapper.MoviedbResponseMapper;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;

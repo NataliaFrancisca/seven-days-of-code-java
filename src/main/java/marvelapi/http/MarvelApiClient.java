@@ -1,6 +1,6 @@
-package MarvelAPI.http;
+package marvelapi.http;
 
-import MarvelAPI.utils.HashMd5;
+import marvelapi.utils.HashMd5;
 import interfaces.ClientAPI;
 
 import java.io.IOException;
