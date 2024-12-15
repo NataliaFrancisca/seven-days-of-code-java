@@ -8,5 +8,5 @@
 - [X] dia 4: gerando o HTML
 - [X] dia 5: encapsulando o código
 - [X] dia 6: criando abstrações
-- [ ] dia 7: ordenando elementos
+- [X] dia 7: ordenando elementos
 
