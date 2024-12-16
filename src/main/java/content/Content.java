@@ -1,9 +1,6 @@
-package movie;
+package content;
 
-import java.util.Comparator;
-import java.util.Map;
-
-public class Movie{
+public class Content {
     private String title;
     private String releaseDate;
     private Double rating;

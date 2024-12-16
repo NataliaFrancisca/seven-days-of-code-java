@@ -1,14 +1,14 @@
 package marvelapi.mapper;
 
 import com.google.gson.JsonObject;
+import content.Content;
 import interfaces.Mapper;
-import movie.Movie;
 
-public class MarvelResponseMapper implements Mapper<Movie> {
+public class MarvelResponseMapper implements Mapper<Content> {
 
     @Override
-    public Movie mapResponse(JsonObject root){
-        Movie movie = new Movie();
+    public Content mapResponse(JsonObject root){
+        Content movie = new Content();
         movie.setTitle(root.get("title").getAsString());
 
         JsonObject thumbnail = root.getAsJsonObject("thumbnail");
