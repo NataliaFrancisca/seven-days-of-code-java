@@ -43,11 +43,9 @@
    
     ```bash
     cd seven-days-of-code-java
-4. Compile e execute o projeto com Maven:
-   
-   ```bash
-   mvn clean install
-   mvn exec:java
+
+4. Acesse o arquivo `Main.java` para adiconar sua chave da API.
+5. Execute o arquivo Main.java para criar as páginas dinâmicamente.
 
 ## Autora:
 - [@nataliaFrancisca](https://www.github.com/NataliaFrancisca)
